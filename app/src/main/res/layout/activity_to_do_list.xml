@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toDoList">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/light_green"
+        android:src="@drawable/baseline_create_24"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/listBtn"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="@color/light_green"
+        android:src="@drawable/baseline_check_24"
+        app:tint="@color/white" />
+
+
+</RelativeLayout>
