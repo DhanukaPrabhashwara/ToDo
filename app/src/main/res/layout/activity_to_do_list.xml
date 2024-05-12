@@ -14,18 +14,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
-        android:text="Your Tasks"
         android:layout_marginStart="18dp"
-        android:textColor="@color/light_green"
-        android:textSize="24sp" />
+        android:layout_marginTop="40dp"
+        android:text="Your Tasks"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:padding="16dp" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addBtn"
@@ -34,8 +35,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="134dp"
         android:backgroundTint="@color/light_green"
         android:src="@drawable/baseline_create_24"
         app:tint="@color/white" />
@@ -47,8 +48,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="56dp"
         android:backgroundTint="@color/light_green"
         android:src="@drawable/baseline_check_24"
         app:tint="@color/white" />
