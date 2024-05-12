@@ -12,7 +12,7 @@ class AddTask : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTaskBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_task)
+        setContentView(binding.root)
 
         db = TaskDatabase(this)
 
