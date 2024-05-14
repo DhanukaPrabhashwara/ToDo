@@ -7,33 +7,33 @@
     android:backgroundTint="@color/white"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".AddTask">
+    tools:context=".UpdateTask">
 
     <TextView
-        android:id="@+id/heading"
+        android:id="@+id/editHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:text="Add your Task"
+        android:text="Edit Task"
         android:textColor="@color/light_green"
         android:textSize="24sp" />
 
     <ImageView
-        android:id="@+id/saveBtn"
+        android:id="@+id/updateSaveBtn"
         android:layout_width="64dp"
         android:layout_height="61dp"
-        android:layout_alignTop="@+id/heading"
+        android:layout_alignTop="@+id/editHeading"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="708dp"
         android:layout_marginEnd="1dp"
         android:src="@drawable/baseline_add_box_24" />
 
     <EditText
-        android:id="@+id/editTitle"
+        android:id="@+id/updateTitle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@+id/heading"
+        android:layout_below="@+id/editHeading"
         android:layout_marginTop="16dp"
         android:background="@drawable/border"
         android:hint="Title"
@@ -43,10 +43,10 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editContent"
+        android:id="@+id/updateContent"
         android:layout_width="452dp"
         android:layout_height="566dp"
-        android:layout_below="@+id/editTitle"
+        android:layout_below="@+id/updateTitle"
         android:layout_marginTop="12dp"
         android:background="@drawable/border"
         android:gravity="top"
