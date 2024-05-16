@@ -7,14 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class TaskAdapter (private var task: List<Task>, context: Context) : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
 
+    private val db : TaskDatabase = TaskDatabase(context)
+
     class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val titleTask: TextView = itemView.findViewById(R.id.titleTask)
         val contentView: TextView = itemView.findViewById(R.id.contentView)
-        val updateBtn: ImageView= itemView.findViewById(R.id.updateBtn)
+        val updateBtn: ImageView = itemView.findViewById(R.id.updateBtn)
+        val deleteBtn: ImageView = itemView.findViewById(R.id.deleteBtn)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
@@ -35,6 +39,13 @@ class TaskAdapter (private var task: List<Task>, context: Context) : RecyclerVie
             }
             holder.itemView.context.startActivity(intent)
         }
+
+        holder.deleteBtn.setOnClickListener {
+            db.deleteTask(task.id)
+            refreshData(db.getAllTasks())
+            Toast.makeText(holder.itemView.context, "Task Deleted", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     fun refreshData(newTask: List<Task>){
