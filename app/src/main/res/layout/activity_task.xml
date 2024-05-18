@@ -16,17 +16,19 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:text="Add New Task"
+        android:fontFamily="@font/days_one"
         android:textColor="@color/light_green"
         android:textSize="24sp" />
+
 
     <ImageView
         android:id="@+id/saveBtn"
         android:layout_width="64dp"
         android:layout_height="61dp"
-        android:layout_alignTop="@+id/heading"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="708dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginEnd="1dp"
+        android:layout_marginBottom="52dp"
         android:src="@drawable/baseline_check_box_24" />
 
     <EditText
@@ -36,6 +38,7 @@
         android:layout_below="@+id/heading"
         android:layout_marginTop="16dp"
         android:background="@drawable/border"
+        android:backgroundTint="@color/light_green"
         android:hint="Title"
         android:maxLines="1"
         android:padding="12dp"
@@ -49,6 +52,7 @@
         android:layout_below="@+id/editTitle"
         android:layout_marginTop="12dp"
         android:background="@drawable/border"
+        android:backgroundTint="@color/light_green"
         android:gravity="top"
         android:hint="Description"
         android:padding="12dp"

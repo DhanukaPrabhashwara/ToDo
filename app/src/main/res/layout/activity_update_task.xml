@@ -14,8 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="46dp"
         android:text="Edit Task"
+        android:fontFamily="@font/days_one"
         android:textColor="@color/light_green"
         android:textSize="24sp" />
 
@@ -23,10 +24,10 @@
         android:id="@+id/updateSaveBtn"
         android:layout_width="64dp"
         android:layout_height="61dp"
-        android:layout_alignTop="@+id/editHeading"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="708dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginEnd="1dp"
+        android:layout_marginBottom="52dp"
         android:src="@drawable/baseline_check_box_24" />
 
     <EditText
@@ -36,6 +37,7 @@
         android:layout_below="@+id/editHeading"
         android:layout_marginTop="16dp"
         android:background="@drawable/border"
+        android:backgroundTint="#F4FF88"
         android:hint="Title"
         android:maxLines="1"
         android:padding="12dp"
@@ -47,8 +49,9 @@
         android:layout_width="452dp"
         android:layout_height="566dp"
         android:layout_below="@+id/updateTitle"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="13dp"
         android:background="@drawable/border"
+        android:backgroundTint="#F4FF88"
         android:gravity="top"
         android:hint="Description"
         android:padding="12dp"

@@ -51,7 +51,7 @@
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="56dp"
         android:backgroundTint="@color/light_green"
-        android:src="@drawable/baseline_check_24"
+        android:src="@drawable/baseline_find_in_page_24"
         app:tint="@color/white" />
 
 
